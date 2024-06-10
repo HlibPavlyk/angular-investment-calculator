@@ -1,6 +1,6 @@
-import {Component, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {InvestmentResults} from "./investment-results.model";
-import {CurrencyPipe, NgForOf} from "@angular/common";
+import {CurrencyPipe} from "@angular/common";
 
 @Component({
   selector: 'app-investment-results',
@@ -12,5 +12,5 @@ import {CurrencyPipe, NgForOf} from "@angular/common";
   styleUrl: './investment-results.component.css'
 })
 export class InvestmentResultsComponent {
-  @Input() results?: InvestmentResults[]
+  results = input<InvestmentResults[]>();
 }
