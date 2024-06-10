@@ -1,12 +1,12 @@
 import {Component, Input} from '@angular/core';
 import {InvestmentResults} from "./investment-results.model";
-import {NgForOf} from "@angular/common";
+import {CurrencyPipe, NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-investment-results',
   standalone: true,
   imports: [
-    NgForOf
+    CurrencyPipe
   ],
   templateUrl: './investment-results.component.html',
   styleUrl: './investment-results.component.css'
